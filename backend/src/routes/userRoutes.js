@@ -1,4 +1,12 @@
 import express from "express";
+import {
+  signUp,
+  logIn,
+  confirm,
+  forgot,
+  verifyCode,
+  reset,
+} from "../controllers/authControl.js";
 const router = express.Router();
 router.post("/register", signUp);
 router.post("/login", logIn);
